@@ -131,7 +131,7 @@ def white_margin_example(img, W_INNER, H_INNER):
 if __name__ == '__main__':
 
     # hyper param
-    FILE_PATH = "./file.jpg"
+    FILE_PATH = "./test_scan.jpg"
     RATIO = 1  # 縮放大小, 1=原圖大小
     LB_BOUND = [60, 210]  # 分割下界、上界
     MEDIAN_KSIZE = 3  # 中值濾波器 kernel size
