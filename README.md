@@ -6,7 +6,7 @@
 
 
 ## 需要決定一些超參數
-```python=
+```python
 FILE_PATH = "./file.jpg"
 RATIO = 1  # 縮放大小, 1=原圖大小
 LB_BOUND = [60, 210]  # 根據算出來的直方圖分割下界、上界
