@@ -2,7 +2,7 @@
 將文件掃描出電子檔的白色背景變得更白，這樣從電子檔印出來的白色背景就不會感覺灰灰的了。
 
 ## 使用結果
-![](![]./md_image/result.png))
+![](![]./md_image/result.png)
 
 
 ## 需要決定一些超參數
@@ -17,7 +17,7 @@ H_INNER = [0.0450, 0.925]  # 邊界強制留白處理時的 "不處理區間"
 
 ### Step  1 計算原圖的灰階直方圖
 * 圖片很大張的話log-scale會有幫助
-![](![]./md_image/Step1_Grey Histogram.png))
+![](![]./md_image/Step1_Grey Histogram.png)
 
 ### Step 2 計算RGB的直方圖
 * 這邊會需要看直方圖來決定將**上下界(右方的圖)**定在哪邊
@@ -33,7 +33,7 @@ LB_BOUND = [60, 210]
 
 
 ### Step 4 過個 median filter
-![](![]./md_image/Step4_after_median_3.png))
+![](![]./md_image/Step4_after_median_3.png)
 
 ### Step 5 處理麻煩的邊際界
 * 大部分掃描機掃出來都會有黑邊，所以設定邊緣區域來強制轉白
@@ -46,7 +46,7 @@ H_INNER = [0.0450, 0.925]
 * 左上角為 (0%, 0%)
 * 這種%數取法看似很繞但在程式上很好寫。
 * 紫色對應=W_INNER, 黃色對應=H_INNER 
-![]./md_image/Step5_margin是意圖.png)
+![](./md_image/Step5_margin示意圖.png)
 
 ### Step 6 成果
 ![](./md_image/Step6_final_image.png)
