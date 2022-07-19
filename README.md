@@ -17,7 +17,8 @@ H_INNER = [0.0450, 0.925]  # 邊界強制留白處理時的 "不處理區間"
 
 ### Step  1 計算原圖的灰階直方圖
 * 圖片很大張的話log-scale會有幫助
-![](./md_image/Step1_Grey Histogram.jpg)
+![](./md_image/Step1_Grey_Histogram.jpg)
+
 
 ### Step 2 計算RGB的直方圖
 * 這邊會需要看直方圖來決定將**上下界(右方的圖)**定在哪邊
@@ -25,7 +26,8 @@ H_INNER = [0.0450, 0.925]  # 邊界強制留白處理時的 "不處理區間"
 LB_BOUND = [60, 210]
 ```
 * 在外側的點會分別設定為 **黑(左界)** 與 **白(右界)**
-![](./md_image/Step2_3 chennels Histogram.jpg)
+
+![](./md_image/Step2_3 chennels_Histogram.jpg)
 
 ### Step 3 於是圖片變成這樣
 * 此時有可能會有躁點(黑點會位於文字區塊內，要放大才會感受到)
