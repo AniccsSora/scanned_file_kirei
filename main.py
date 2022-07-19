@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import ndimage
 
+
 def make_hist(np_image):
     fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(10, 4))
     #
