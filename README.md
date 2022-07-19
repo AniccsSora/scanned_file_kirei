@@ -17,7 +17,8 @@ H_INNER = [0.0450, 0.925]  # 邊界強制留白處理時的 "不處理區間"
 
 ### Step  1 計算原圖的灰階直方圖
 * 圖片很大張的話log-scale會有幫助
-![](./md_image/Step1_Grey Histogram.jpg)
+![]("./md_image/Step1_Grey Histogram.jpg")
+
 
 ### Step 2 計算RGB的直方圖
 * 這邊會需要看直方圖來決定將**上下界(右方的圖)**定在哪邊
